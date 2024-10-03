@@ -10,7 +10,7 @@ const (
 )
 
 func main() {
-	tgClient = telegram.New(tgBotHost, mustToken())
+	tgClient := telegram.New(tgBotHost, mustToken())
 	//
 	//fetcher = fetcher.New(tgClient)
 	//
