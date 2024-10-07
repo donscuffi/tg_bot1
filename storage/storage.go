@@ -26,11 +26,11 @@ func (p *Page) Hash() (string, error) { //(p Page)?
 	h := sha1.New()
 
 	if _, err := io.WriteString(h, p.URL); err != nil {
-		return e.Wrap("can't calculate hash", err) //return  ""
+		return "", e.Wrap("can't calculate hash", err) //return  ""
 	}
 
 	if _, err := io.WriteString(h, p.UserName); err != nil {
-		return e.Wrap("can't calculate hash", err) //return ""
+		return "", e.Wrap("can't calculate hash", err) //return ""
 	}
 
 	return fmt.Sprintf("$x", h.Sum(nil)), nil

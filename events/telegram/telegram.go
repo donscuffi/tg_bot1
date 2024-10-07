@@ -86,7 +86,7 @@ func event(upd telegram.Update) events.Event {
 	updType := fetchType(upd)
 
 	res := events.Event{
-		Type: fetchType(upd), //fetchType?
+		Type: updType, //fetchType?
 		Text: fetchText(upd),
 	}
 
@@ -99,15 +99,15 @@ func event(upd telegram.Update) events.Event {
 	return res
 }
 
-func fetchText(upd telegram.Update) interface{} {
+func fetchText(upd telegram.Update) string {
 	if upd.Message == nil {
 		return ""
 	}
 
-	return upd.Message
+	return upd.Message.Text
 }
 
-func fetchType(upd telegram.Update) event.Event { //event.Type?
+func fetchType(upd telegram.Update) events.Type { //event.Type?
 	if upd.Message == nil {
 		return events.Unknown
 	}
