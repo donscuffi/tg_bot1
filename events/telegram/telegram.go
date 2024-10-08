@@ -2,10 +2,10 @@ package telegram
 
 import (
 	"errors"
-	"github.com/donscuffi/tg_bot1/clients/telegram"
-	"github.com/donscuffi/tg_bot1/events"
-	"github.com/donscuffi/tg_bot1/lib/e"
-	"github.com/donscuffi/tg_bot1/storage"
+	"tg_bot1/clients/telegram"
+	"tg_bot1/events"
+	"tg_bot1/lib/e"
+	"tg_bot1/storage"
 )
 
 type Processor struct {

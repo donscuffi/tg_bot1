@@ -2,12 +2,12 @@ package telegram
 
 import (
 	"encoding/json"
-	"github.com/donscuffi/tg_bot1/lib/e"
 	"io"
 	"net/http"
 	"net/url"
 	"path"
 	"strconv"
+	"tg_bot1/lib/e"
 )
 
 type Client struct {

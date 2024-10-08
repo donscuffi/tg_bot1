@@ -1,8 +1,8 @@
 package event_consumer
 
 import (
-	"github.com/donscuffi/tg_bot1/events"
 	"log"
+	"tg_bot1/events"
 	"time"
 )
 

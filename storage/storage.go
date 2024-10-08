@@ -4,8 +4,8 @@ import (
 	"crypto/sha1"
 	"errors"
 	"fmt"
-	"github.com/donscuffi/tg_bot1/lib/e"
 	"io"
+	"tg_bot1/lib/e"
 )
 
 type Storage interface {

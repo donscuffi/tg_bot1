@@ -4,11 +4,11 @@ import (
 	"encoding/gob"
 	"errors"
 	"fmt"
-	"github.com/donscuffi/tg_bot1/lib/e"
-	"github.com/donscuffi/tg_bot1/storage"
 	"math/rand"
 	"os"
 	"path/filepath"
+	"tg_bot1/lib/e"
+	"tg_bot1/storage"
 	"time"
 )
 
