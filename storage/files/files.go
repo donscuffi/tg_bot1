@@ -55,6 +55,8 @@ func (s Storage) PickRandom(userName string) (page *storage.Page, err error) {
 
 	path := filepath.Join(s.basePath, userName)
 
+	// check user folder or create folder
+
 	files, err := os.ReadDir(path)
 	if err != nil {
 		return nil, err
